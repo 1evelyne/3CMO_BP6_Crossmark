@@ -90,30 +90,33 @@ body{
 .logo{
   max-width: 150px;
   float: left;
-  margin-top: 20px;
-  margin-right: 45px;
-  margin-left: 100px;
+  margin: 20px 5% 20px 0;
   position: relative;
   z-index: 4;
 }
-nav{
-  margin-right: 100px;
+header {
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    padding: 0 10%;
+    margin: auto;
+    background: rgba(0,0,0,.1);
 }
+nav{text-align: right;margin: 20px auto;}
 nav a {
   text-decoration: none;
-  margin-top: 20px;
-  margin-right: 45px;
-  position: relative;
-  z-index: 4;
-  float: right;
+  margin-left: 5%;
   font-size: 14px;
   list-style: none;
   position: relative;
   color: #fff;
-  display: block;
   font-weight: 400;
   letter-spacing: 2px;
+  display: inline-block;
+}
 
+section:not(.over) {
+    padding: 2% 10%;
 }
 /*ONELINER*/
 .over{position:relative}
@@ -300,11 +303,14 @@ h6{
 /*CONTACT*/
 .groenekader{
   background-color:#389c36;
-  height:50px;
+  height: auto;
+  display: inline-block;
+  width: 100%;
 }
 .wittekader{
   background-color:#fff;
   height:250px;
+  padding: 0 20px;
 }
 
 /*FOOTER*/
@@ -318,3 +324,7 @@ h6{
   text-align:right;
   width: 50%;
 }
+like that?
+ye, much better
+how do I parse it to you in Github?
+moet niet speciaal nu als je geen tijd hebt
