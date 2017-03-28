@@ -141,12 +141,12 @@ section.wittekader{
 #oneliner{
   font-size:25px;
   color:#fff;
-  top:15%;
+  top:40%;
   text-align:right;
   font-weight:400;
   letter-spacing:1px;
   z-index:10;
-  width:42%;
+  width:25%;
   position:absolute;
   right:9%;
 }
@@ -238,6 +238,7 @@ margin-top:-5px;
   margin-top:50px;
   margin-bottom:30px;
 }
+
 /*ICONS*/
 .icon{
   max-width:60px;
@@ -251,9 +252,8 @@ margin-top:-5px;
   min-height:1px;
   padding-right:15px;
   padding-left:15px;
-  width:33.33333333%;
 }
-.over, .wat, .calltoaction, .referenties, .meer, .cijfers, .contact{
+.over, .wat, .calltoaction, .referenties, .meer, .cijfers, .contact, .footer{
   margin-bottom:69px;
 }
 .groen{
@@ -292,13 +292,90 @@ margin-top:-5px;
   text-align:center;
   color:#fff;
 }
-
-/*REFERENTIES*/
+.meerreferenties{margin-top:69px;}
+/*-------REFERENTIES----------*/
 .referenties{
   margin:0 auto;
   text-align:center;
   display:block;
   width:100%;
+}
+.wrapper {
+  width: 100%;
+  margin: 10px auto;
+}
+.main-iso {
+  width: 100%;
+  float: left;
+  display: inline-block;
+}
+
+.active {
+  background: #5274a9;
+  color: #fff;
+}
+
+.item {
+  float: left;
+  width: 12.5%;
+}
+
+.item img {
+  display: block;
+  width: 100%;
+}
+/*Show description on hover*/
+.imgWrap {
+  position: relative;
+  display: block;
+}
+.imgDescription {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0);
+    color: transparent;
+    visibility: hidden;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: all .3s ease;
+}
+
+.imgWrap:hover .imgDescription {
+    visibility: visible;
+    opacity: 1;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+}
+/*MEDIA QUERIES IMAGES*/
+@media only screen and (min-width: 1400px) {
+  .grid-sizer {width:20%;}
+  .item {width: 20%;}
+}
+@media only screen and (max-width: 1400px) {
+  .grid-sizer {width:50%;}
+  .item {width: 50%;}
+}
+@media only screen and (max-width: 1200px) {
+  .grid-sizer {width:60%;}
+  .item {width: 60%;}
+}
+@media only screen and (max-width: 1000px) {
+  .grid-sizer {width:70%;}
+  .item {width: 70%;}
+}
+@media only screen and (max-width: 800px) {
+  .grid-sizer {width:80%;}
+  .item {width: 80%;}
+}
+@media only screen and (max-width: 600px) {
+  .grid-sizer {width:100%;}
+  .item {width: 100%;}
 }
 /*BUTTON*/
 .meer{
@@ -334,6 +411,7 @@ margin-top:-5px;
   height:auto;
   display:inline-block;
   width:100%;
+  padding-bottom: 80px;
 }
 /*.crossmarkpijltje img{
   height:25px;
@@ -346,6 +424,7 @@ margin-top:-5px;
   padding:0 20px;
   width:80%;
   margin:0 auto;
+  text-align: center;
 }
 .wittekader:before{
   content: "";
@@ -379,15 +458,15 @@ margin-top:-5px;
 
 .infoteam{margin:0 auto;}
 .meettheteamplus{
-  text-align:center;
-  margin:0 auto;
-  display:block;
-  background-color:#389c36;
-  margin-top:69px;
-  margin-bottom:69px;
-  width:170px;
-  height:50px;
-  border:none;
+  text-align: center;
+  margin: 0 auto;
+  /* display: block; */
+  background-color: #389c36;
+  margin-top: 69px;
+  /* margin-bottom: 69px; */
+  width: 170px;
+  height: 50px;
+  border: none;
 }
 .meettheteamplus h3{color:#fff;
 width:100%}
@@ -410,6 +489,22 @@ width:100%}
   width:70%;
   margin:0 auto;
   display:block;
+}
+.teamlid{
+  max-width: 150px;
+  margin-top:20px;
+  margin: 0 auto;
+  padding:.2em;
+}
+img.teamlid{
+  margin-top:20px;
+}
+.teambox h4{
+  margin-top: 10px;
+}
+hr{
+  color: #389c36;
+  width: 110%;
 }
 /*FOOTER*/
 footer{
