@@ -253,7 +253,7 @@ margin-top:-5px;
   padding-right:15px;
   padding-left:15px;
 }
-.over, .wat, .calltoaction, .referenties, .meer, .cijfers, .contact, .footer{
+.over, .wat, .calltoaction, .referenties, .meer, .cijfers, .contact{
   margin-bottom:69px;
 }
 .groen{
@@ -425,6 +425,8 @@ margin-top:-5px;
   width:80%;
   margin:0 auto;
   text-align: center;
+  margin-top: -14em;
+    position: relative;
 }
 .wittekader:before{
   content: "";
@@ -502,12 +504,14 @@ img.teamlid{
 .teambox h4{
   margin-top: 10px;
 }
-hr{
-  width: 110%;
+
+.container{
+  width: 115%;
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #389c36;
+  align-content: flex-end;
 }
 /*FOOTER*/
 footer{

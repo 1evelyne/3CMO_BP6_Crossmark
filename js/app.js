@@ -2,7 +2,6 @@ $(document).ready(function(){
     $("button").click(function(){
         $(".teambox").slideToggle();
     });
-
 /*REFERENTIES*/
     $('.main-iso').isotope({
   itemSelector: '.item',
