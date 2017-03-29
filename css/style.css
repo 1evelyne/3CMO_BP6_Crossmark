@@ -503,8 +503,11 @@ img.teamlid{
   margin-top: 10px;
 }
 hr{
-  color: #389c36;
   width: 110%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #389c36;
 }
 /*FOOTER*/
 footer{
