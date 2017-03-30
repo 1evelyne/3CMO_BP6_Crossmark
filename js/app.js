@@ -1,7 +1,15 @@
 $(document).ready(function(){
-    $("button").click(function(){
+  /*ShowTeam*/
+    $("button").click(function(e){
+      e.preventDefault();
         $(".teambox").slideToggle();
     });
+    /*ShowOfferte*/
+    $("button").click(function(e){
+        e.preventDefault();
+        $(".offertebox").slideToggle();
+    });
+
 /*REFERENTIES*/
     $('.main-iso').isotope({
   itemSelector: '.item',

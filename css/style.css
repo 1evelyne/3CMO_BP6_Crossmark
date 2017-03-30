@@ -530,3 +530,19 @@ footer{
   text-align:right;
   width:50%;
 }
+
+
+
+/*---------OFFERTEPAGINA--------*/
+.verplicht{
+  position: absolute;
+  top:0;
+  right: 15px;
+  color:#389c36;
+}
+input{
+}
+.tekstbeschrijvingform{
+  text-align: left;
+  float:left;
+}
