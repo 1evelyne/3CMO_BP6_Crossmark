@@ -579,3 +579,12 @@ input{
   text-align: left;
   float:left;
 }
+/*---------SCROLLBAR--------*/
+::-webkit-scrollbar{width:12px;height:12px}
+::-webkit-scrollbar-corner{background-color:#fff}
+::-webkit-scrollbar-track{background-color:#fff}
+::-webkit-scrollbar-thumb{background:#389c36}
+/*Selection
+-------------*/
+::-moz-selection{color:#fff;background-color:#389c36}
+     ::selection{color:#fff;background-color:#389c36}
