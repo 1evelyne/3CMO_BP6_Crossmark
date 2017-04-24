@@ -112,8 +112,9 @@ header{
     padding:0 10%;
     margin:auto;
     background:rgba(0,0,0,.2);
+    top:0;
 }
-nav{text-align:right;margin:20px auto;}
+nav{text-align:right;margin:0 auto 20px;}
 nav a{
   text-decoration:none;
   margin-left:5%;
@@ -134,8 +135,8 @@ margin: 0
 }
 .container>.navbar-collapse{
   margin-right: 0;
-margin-left: 0;
-margin-top: 1em;
+  margin-left: 0;
+  margin-top: 1em;
 }
 /*
 section:not(.over){
@@ -259,9 +260,12 @@ margin-top:-5px;
   margin-top:50px;
   float:left;
   position:relative;
-  min-height:1px;
+  min-height:140px;
   padding-right:15px;
   padding-left:15px;
+}
+main{
+  margin-top:88px;
 }
 .over, .wat, .calltoaction, .referenties, .meer, .cijfers, .contact{
   margin-bottom:69px;
@@ -288,6 +292,7 @@ margin-top:-5px;
   padding:1em;
   transition:all .3s ease;
   outline:0;
+  display:inline-block;
 }
 
 .calltoactionbutton:hover{
@@ -384,6 +389,11 @@ margin-top:-5px;
   margin-top: 69px;
 }
 /*---------CONTACT--------*/
+.contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .groenekader{
   background-color:#389c36;
   height:200px;
@@ -563,6 +573,7 @@ input{
   text-align: left;
   float:left;
 }
+.offertebox{display:none}
 /*---------SCROLLBAR--------*/
 ::-webkit-scrollbar{width:12px;height:12px}
 ::-webkit-scrollbar-corner{background-color:#fff}
@@ -595,9 +606,10 @@ input{
 }
 /* TABLETS PORTRAIT */
 @media only screen and (min-width: 768px) {
-
+.referentiestitel{}
+.referentiesbeschrijving{}
+.kader{}
 }
-
 /* TABLET LANDSCAPE / DESKTOP */
 @media only screen and (min-width: 1024px) {
 
@@ -627,33 +639,25 @@ input{
   .grid-sizer {width:100%;}
   .item {width: 100%;}
 }
-/* REFERENTIES GRID */
+
+/*---------REFERENTIES GRID--------*/
+.referentiegrid{height:1000px;}
 .referentiefoto {
-  width: 60px;
-  height: 60px;
+  width: 200px;
+  height: 200px;
   background: #19D;
   float: left;
   margin: 5px;
 }
-
-.referentiefoto.w2 { width: 130px; }
-.referentiefoto.h2 { height: 130px; }
-
-/* Start: Recommended Isotope styles */
-
+.referentiefoto.groot { width: 400px; }
+.referentiefoto.breed { width: 700px; }
 /**** Isotope Filtering ****/
-
-.isotope-referentiefoto {
-  z-index: 2;
-}
-
+.isotope-referentiefoto {z-index: 2;}
 .isotope-hidden.isotope-referentiefoto {
   pointer-events: none;
   z-index: 1;
 }
-
 /**** Isotope CSS3 transitions ****/
-
 .isotope,
 .isotope .isotope-referentiefoto {
   -webkit-transition-duration: 0.8s;
@@ -662,7 +666,6 @@ input{
        -o-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }
-
 .isotope {
   -webkit-transition-property: height, width;
      -moz-transition-property: height, width;
@@ -670,7 +673,6 @@ input{
        -o-transition-property: height, width;
           transition-property: height, width;
 }
-
 .isotope .isotope-referentiefoto {
   -webkit-transition-property: -webkit-transform, opacity;
      -moz-transition-property:    -moz-transform, opacity;
@@ -678,9 +680,7 @@ input{
        -o-transition-property:      -o-transform, opacity;
           transition-property:         transform, opacity;
 }
-
 /**** disabling Isotope CSS3 transitions ****/
-
 .isotope.no-transition,
 .isotope.no-transition .isotope-referentiefoto,
 .isotope .isotope-referentiefoto.no-transition {
@@ -690,4 +690,3 @@ input{
        -o-transition-duration: 0s;
           transition-duration: 0s;
 }
-/* End: Recommended Isotope styles */
