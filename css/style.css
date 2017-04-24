@@ -128,6 +128,15 @@ nav a{
 main{
   height:100%;
 }
+.navbar-nav{
+  float: right;
+margin: 0
+}
+.container>.navbar-collapse{
+  margin-right: 0;
+margin-left: 0;
+margin-top: 1em;
+}
 /*
 section:not(.over){
     padding:2% 10%;
@@ -137,7 +146,7 @@ section.wittekader{
     padding:2% 10%;
     width:80%;
 }*/
-/*ONELINER*/
+/*---------ONELINER--------*/
 .over{position:relative;height:100%}
 #oneliner{
   font-size:25px;
@@ -151,7 +160,7 @@ section.wittekader{
   position:absolute;
   right:9%;
 }
-/*FOTO*/
+/*---------FOTO--------*/
 #start{
   background:url(../images/bg.jpg) no-repeat top center fixed;
   -webkit-background-size:cover;
@@ -164,7 +173,7 @@ section.wittekader{
   position:relative;
   height:100%;
 }
-/*Pijltje*/
+/*---------Pijltje--------*/
 .arrow{
   position:absolute;
   bottom:0;
@@ -183,7 +192,7 @@ section.wittekader{
 -ms-animation:bounce 2s infinite;
 animation:bounce 2s infinite;
 }
-/*TEKST*/
+/*---------TEKST--------*/
 h1{
   font-family:'Open Sans', sans-serif;
   font-size:20px;
@@ -208,14 +217,14 @@ h4{
   font-family:'Open Sans', sans-serif;
   font-size:14px;
   font-weight:400;
-  text-align:left;
+/*text-align:left;*/
   color:#000;
 }
 h5{
   font-family:'Open Sans', sans-serif;
   font-size:12px;
   font-weight:400;
-  text-align:left;
+  /*text-align:left;*/
   color:#979797;
   margin-top:.5em;
 }
@@ -225,20 +234,22 @@ h6{
   font-weight:700;
   text-align:center;
 }
-/*SPECIALE TEKST*/
+/*---------SPECIALE TEKST--------*/
 .col-md-3 h3{
 margin-top:-5px;
 }
-.col-xs-2 h4{
-  text-align: center;
-  margin-top: 55px;
-}
+.col-xs-2 h4{text-align: center;}
 .wittekader h2{
   text-align:left;
   margin-top:50px;
   margin-bottom:30px;
 }
-/*ICONS*/
+/**/
+.tekst{
+  text-align: center;
+    display: block;
+  }
+/*---------ICONS--------*/
 .icon{
   max-width:60px;
   float:left;
@@ -292,7 +303,7 @@ margin-top:-5px;
   color:#fff;
 }
 .meerreferenties{margin-top:69px;}
-/*-------REFERENTIES----------*/
+/*---------REFERENTIES----------*/
 .referenties{
   margin:0 auto;
   text-align:center;
@@ -323,7 +334,7 @@ margin-top:-5px;
   display: block;
   width: 100%;
 }
-/*Show description on hover*/
+/*---------Show description on hover--------*/
 .imgWrap {
   position: relative;
   display: block;
@@ -351,32 +362,7 @@ margin-top:-5px;
     background: rgba(0,0,0,0.5);
     color: #fff;
 }
-/*MEDIA QUERIES IMAGES*/
-@media only screen and (min-width: 1400px) {
-  .grid-sizer {width:20%;}
-  .item {width: 20%;}
-}
-@media only screen and (max-width: 1400px) {
-  .grid-sizer {width:50%;}
-  .item {width: 50%;}
-}
-@media only screen and (max-width: 1200px) {
-  .grid-sizer {width:60%;}
-  .item {width: 60%;}
-}
-@media only screen and (max-width: 1000px) {
-  .grid-sizer {width:70%;}
-  .item {width: 70%;}
-}
-@media only screen and (max-width: 800px) {
-  .grid-sizer {width:80%;}
-  .item {width: 80%;}
-}
-@media only screen and (max-width: 600px) {
-  .grid-sizer {width:100%;}
-  .item {width: 100%;}
-}
-/*BUTTON*/
+/*---------BUTTON--------*/
 .meer{
   text-align:center;
   margin:0 auto;
@@ -391,13 +377,13 @@ margin-top:-5px;
 .meer h3{
   color:#fff;
 }
-/*CIJFERS*/
+/*---------CIJFERS--------*/
 .cijfers{
   background-color:#f0f0f0;
   padding:15px;
-  margin-bottom:69px;
+  margin-top: 69px;
 }
-/*CONTACT*/
+/*---------CONTACT--------*/
 .groenekader{
   background-color:#389c36;
   height:200px;
@@ -412,9 +398,6 @@ margin-top:-5px;
   width:100%;
   padding-bottom: 80px;
 }
-/*.crossmarkpijltje img{
-  height:25px;
-};*/
 .wittekader{
   display:block;
   background-color:#fff;
@@ -449,6 +432,7 @@ margin-top:-5px;
   margin-left:4em;
   margin-right:20px;
 }
+/*---------TEAM--------*/
 .infoteam h2{
   text-align:center;
 }
@@ -503,7 +487,7 @@ img.teamlid{
 .teambox h4{
   margin-top: 10px;
 }
-/*FOOTER*/
+/*---------FOOTER--------*/
 footer{
   background-image:url(../images/lines-bg.jpg);
   background-repeat:repeat;
@@ -527,7 +511,7 @@ footer{
   background-size:cover;
 }
 
-/*REFERENTIES TEKST*/
+/*---------REFERENTIES TEKST--------*/
 .referentiesinfo{margin-top:2em;}
 .referentiestitel{
     font-family: 'Open Sans', sans-serif;
@@ -587,4 +571,58 @@ input{
 /*Selection
 -------------*/
 ::-moz-selection{color:#fff;background-color:#389c36}
-     ::selection{color:#fff;background-color:#389c36}
+    ::selection{color:#fff;background-color:#389c36}
+
+
+/*---------MEDIA QUERIES--------*/
+@media (max-width: 600px) {
+  nav{}
+  #oneliner{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    z-index: 5;
+    width: 90%;
+    position: absolute;
+  }
+}
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) {
+
+}
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+
+}
+/*---------MEDIA QUERIES IMAGES--------*/
+@media only screen and (min-width: 1400px) {
+  .grid-sizer {width:20%;}
+  .item {width: 20%;}
+}
+@media only screen and (max-width: 1400px) {
+  .grid-sizer {width:50%;}
+  .item {width: 50%;}
+}
+@media only screen and (max-width: 1200px) {
+  .grid-sizer {width:60%;}
+  .item {width: 60%;}
+}
+@media only screen and (max-width: 1000px) {
+  .grid-sizer {width:70%;}
+  .item {width: 70%;}
+}
+@media only screen and (max-width: 800px) {
+  .grid-sizer {width:80%;}
+  .item {width: 80%;}
+}
+@media only screen and (max-width: 600px) {
+  .grid-sizer {width:100%;}
+  .item {width: 100%;}
+}
